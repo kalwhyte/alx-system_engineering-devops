@@ -1,5 +1,7 @@
 # Networking basics #0
 
+#Task done on 01/03/2023
+
 This project was the first of two introducing networking concepts. In this project, I answered a few quiz-like questions and wrote a couple bash scripts while learning about the OSI model, LAN and WAN networks, and TCP/UDP data transfer protocols.
 
 ## Tasks :page_with_curl:
