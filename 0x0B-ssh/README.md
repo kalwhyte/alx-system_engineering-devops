@@ -69,15 +69,15 @@ Requirements
 -   The second line of all your Bash scripts should be a comment explaining what is the script doing
 
 Your servers
-------------
 
-|  Name          |  Username |  IP             |  State   |
-|:---------------|:----------|:----------------|:---------|
-|  183140-web-01 |  ubuntu   |  100.26.231.113 |  running |
+```
+|  Name                  |  Username    |  IP                 |  State                   |
+|:-----------------------|:-------------|:--------------------|:-------------------------|
+|  183140-web-01         |  ubuntu      |  100.26.231.113     |  running       `Actions` |
+```
+## Tasks
 
-Tasks
------
-
+```
 ### 0\. Use a private key
 
 mandatory
@@ -90,20 +90,20 @@ Requirements:
 -   You cannot use `-l`
 -   You do not need to handle the case of a private key protected by a passphrase
 
-```
-sylvain@ubuntu$ ./0-use_a_private_key
-ubuntu@server01:~$ exit
-Connection to 8.8.8.8 closed.
-sylvain@ubuntu$
+ ```
+ sylvain@ubuntu$ ./0-use_a_private_key
+ ubuntu@server01:~$ exit
+ Connection to 8.8.8.8 closed.
+ sylvain@ubuntu$
 
-```
-
+ ```
 **Repo:**
 
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x0B-ssh`
 -   File: `0-use_a_private_key`
 
+```
 ### 1\. Create an SSH key pair
 
 mandatory
