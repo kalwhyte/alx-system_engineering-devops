@@ -1,0 +1,70 @@
+{
+	"WhoisRecord": {
+		"domainName": "whytecode.tech",
+		"parseCode": 8,
+		"audit": {
+			"createdDate": "2023-04-27 01:38:38 UTC",
+			"updatedDate": "2023-04-27 01:38:38 UTC"
+		},
+		"registrarName": "Dotserve Inc",
+		"registrarIANAID": "1913",
+		"registryData": {
+			"createdDate": "2023-04-27T01:01:21.0Z",
+			"updatedDate": "2023-04-27T01:01:22.0Z",
+			"expiresDate": "2024-04-27T23:59:59.0Z",
+			"registrant": {
+				"organization": "whytecode.tech",
+				"state": "2540",
+				"country": "NIGERIA",
+				"countryCode": "NG",
+				"rawText": "Registrant Organization: whytecode.tech\nRegistrant State/Province: 2540\nRegistrant Country: NG\nRegistrant Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name."
+			},
+			"administrativeContact": {
+				"country": "NIGERIA",
+				"countryCode": "NG",
+				"rawText": "Admin Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name."
+			},
+			"billingContact": {
+				"country": "NIGERIA",
+				"countryCode": "NG",
+				"rawText": "Billing Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name."
+			},
+			"technicalContact": {
+				"country": "NIGERIA",
+				"countryCode": "NG",
+				"rawText": "Tech Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name."
+			},
+			"domainName": "whytecode.tech",
+			"nameServers": {
+				"rawText": "CONT603385.VENUS.ORDERBOX-DNS.COM\nCONT603385.MERCURY.ORDERBOX-DNS.COM\nCONT603385.MARS.ORDERBOX-DNS.COM\nCONT603385.EARTH.ORDERBOX-DNS.COM\n",
+				"hostNames": [
+					"CONT603385.VENUS.ORDERBOX-DNS.COM",
+					"CONT603385.MERCURY.ORDERBOX-DNS.COM",
+					"CONT603385.MARS.ORDERBOX-DNS.COM",
+					"CONT603385.EARTH.ORDERBOX-DNS.COM"
+				],
+				"ips": []
+			},
+			"status": "serverTransferProhibited clientTransferProhibited addPeriod",
+			"rawText": "Domain Name: WHYTECODE.TECH\nRegistry Domain ID: D364327536-CNIC\nRegistrar WHOIS Server: whois.dotserve.website\nRegistrar URL: http://dotserve.website\nUpdated Date: 2023-04-27T01:01:22.0Z\nCreation Date: 2023-04-27T01:01:21.0Z\nRegistry Expiry Date: 2024-04-27T23:59:59.0Z\nRegistrar: Dotserve Inc\nRegistrar IANA ID: 1913\nDomain Status: serverTransferProhibited https://icann.org/epp#serverTransferProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: addPeriod https://icann.org/epp#addPeriod\nRegistrant Organization: whytecode.tech\nRegistrant State/Province: 2540\nRegistrant Country: NG\nRegistrant Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.\nAdmin Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.\nTech Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.\nName Server: CONT603385.VENUS.ORDERBOX-DNS.COM\nName Server: CONT603385.MERCURY.ORDERBOX-DNS.COM\nName Server: CONT603385.MARS.ORDERBOX-DNS.COM\nName Server: CONT603385.EARTH.ORDERBOX-DNS.COM\nDNSSEC: unsigned\nBilling Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.\nRegistrar Abuse Contact Email: abuse@dotserve.website\nRegistrar Abuse Contact Phone: +1.4154494774\nURL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/\n>>> Last update of WHOIS database: 2023-04-27T01:38:37.0Z <<<\n\nFor more information on Whois status codes, please visit https://icann.org/epp\n\n>>> IMPORTANT INFORMATION ABOUT THE DEPLOYMENT OF RDAP: please visit\nhttps://www.centralnic.com/support/rdap <<<\n\nThe Whois and RDAP services are provided by CentralNic, and contain\ninformation pertaining to Internet domain names registered by our\nour customers. By using this service you are agreeing (1) not to use any\ninformation presented here for any purpose other than determining\nownership of domain names, (2) not to store or reproduce this data in\nany way, (3) not to use any high-volume, automated, electronic processes\nto obtain data from this service. Abuse of this service is monitored and\nactions in contravention of these terms will result in being permanently\nblacklisted. All data is (c) CentralNic Ltd (https://www.centralnic.com)\n\nAccess to the Whois and RDAP services is rate limited. For more\ninformation, visit https://registrar-console.centralnic.com/pub/whois_guidance.",
+			"parseCode": 4091,
+			"header": "",
+			"strippedText": "Domain Name: WHYTECODE.TECH\nRegistrar WHOIS Server: whois.dotserve.website\nRegistrar URL: http://dotserve.website\nUpdated Date: 2023-04-27T01:01:22.0Z\nCreation Date: 2023-04-27T01:01:21.0Z\nRegistry Expiry Date: 2024-04-27T23:59:59.0Z\nRegistrar: Dotserve Inc\nRegistrar IANA ID: 1913\nDomain Status: serverTransferProhibited https://icann.org/epp#serverTransferProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: addPeriod https://icann.org/epp#addPeriod\nRegistrant Organization: whytecode.tech\nRegistrant State/Province: 2540\nRegistrant Country: NG\nRegistrant Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.\nAdmin Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.\nTech Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.\nName Server: CONT603385.VENUS.ORDERBOX-DNS.COM\nName Server: CONT603385.MERCURY.ORDERBOX-DNS.COM\nName Server: CONT603385.MARS.ORDERBOX-DNS.COM\nName Server: CONT603385.EARTH.ORDERBOX-DNS.COM\nBilling Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.\nRegistrar Abuse Contact Email: abuse@dotserve.website\nRegistrar Abuse Contact Phone: +1.4154494774\n",
+			"footer": "",
+			"audit": {
+				"createdDate": "2023-04-27 01:38:38 UTC",
+				"updatedDate": "2023-04-27 01:38:38 UTC"
+			},
+			"registrarName": "Dotserve Inc",
+			"registrarIANAID": "1913",
+			"createdDateNormalized": "2023-04-27 01:01:21 UTC",
+			"updatedDateNormalized": "2023-04-27 01:01:22 UTC",
+			"expiresDateNormalized": "2024-04-27 23:59:59 UTC",
+			"whoisServer": "whois.dotserve.website"
+		},
+		"domainAvailability": "UNAVAILABLE",
+		"contactEmail": "abuse@dotserve.website",
+		"domainNameExt": ".tech",
+		"estimatedDomainAge": 0
+	}
+}
