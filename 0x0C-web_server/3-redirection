@@ -11,18 +11,19 @@
 apt-get -y update
 apt-get -y install nginx
 
-touch /var/www/html/index.html
-echo "Hello World!" > /var/www/html/index.html
+touch /var/www/whytecode.tech/html/index1.html
+echo "Welcome" > /var/www/whytecode.tech/html/index1.html
 
 printf %s "server {
     listen		80 default_server;
     listen		[::]:80 default_server;
 
-    root		/var/www/html;
+    root		/var/www/whytecode.tech/html;
     index		index.html index.htm index.nginx-debian.html;
 
-    location /redirect_me {
-        return 301 https://www.youtube.com/watch?v=ognHtTa693E;
+    server_name whytecode.tech www.whytecode.tech;
+    location / {
+            try_files $uri $uri/ =404;
     }
 }
 " > /etc/nginx/sites-available/default
