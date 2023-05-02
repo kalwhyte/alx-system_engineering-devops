@@ -4,15 +4,15 @@
 apt-get update
 apt-get install -y nginx
 
-touch /var/www/html/index.html /var/www/html/404.html
-echo "Hello World!" > /var/www/html/index.html
-echo "Ceci n'est pas une page" > /var/www/html/404.html
+touch /var/www/whytecode.tech/html/index.html /var/www/whytecode.tech/html/404.html
+echo "Hello World!" > /var/www/whytecode.tech/html/index.html
+echo "Ceci n'est pas une page" > /var/www/whytecode.tech/html/404.html
 
 printf %s "server {
     listen 80;
     listen [::]:80 default_server;
     add_header X-Served-By $HOSTNAME;
-    root   /var/www/html/;
+    root   /var/www/whytecode.tech/html/;
     index  index.html index.htm;
 
     location /redirect_me {
@@ -21,7 +21,7 @@ printf %s "server {
 
     error_page 404 /404.html;
     location /404 {
-        root /var/www/html/;
+        root /var/www/whytecode.tech/html/;
         internal;
     }
 }" > /etc/nginx/sites-available/default
