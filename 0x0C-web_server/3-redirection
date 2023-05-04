@@ -1,19 +1,15 @@
 #!/usr/bin/env bash
-# Installs Nginx with the following configurations:
-## server
-## Nginx should be listening on port 80
-## When querying Nginx at its root / with a GET request (requesting a page)\
-### using curl, it must return a page that contains the string Hello World!
-## As an answer file, write a Bash script that configures a new Ubuntu machine\
-### to respect above requirements (this script will be run on the server itself)
-## You can’t use systemctl for restarting nginx
+# This script configures the Nginx server so that
+# /redirect_me is redirecting to another page
 
-apt-get -y update
-apt-get -y install nginx
-
-touch /var/www/whytecode.tech/html/index.html
-echo "Hello World!" > /var/www/whytecode.tech/html/index.html
-
-sed -i "s|# server {|server {\n    listen		80 default_server;\n    listen		[::]:80 default_server;\n\n    root		/var/www/whytecode.tech/html;\n    index		index.html index.htm index.nginx-debian.html;\n\n    location /redirect_me {\n        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n    }\n}|" /etc/nginx/sites-available/default
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo touch /var/www/html/index.html
+sudo chown -R "$USER":"$USER" /var/www
+echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
+sudo sed -i "6a\
+	if (\$request_filename ~ redirect_me){\
+	rewrite ^ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\
+}" /etc/nginx/sites-available/default
 
 service nginx restart
