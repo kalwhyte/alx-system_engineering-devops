@@ -1,4 +1,4 @@
-# This automate the task of creating a custom HTTP header response, but with Puppet
+# This automates the task of creating a custom HTTP header response, but with Puppet
 
 exec { 'command':
   command  => 'apt-get -y update;
