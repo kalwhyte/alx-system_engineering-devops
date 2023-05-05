@@ -13,8 +13,8 @@ frontend hbnb-lb_front
         default_backend hbnb-lb_back
 backend hbnb-lb_back
         balance roundrobin
-        server 183140-web-01 34.207.237.54:80 check
-        server 183140-web-02 54.160.84.46:80 check
+        server whytecode-web-01 34.207.237.54:80 check
+        server whytecode-web-02 54.160.84.46:80 check
 " >> /etc/haproxy/haproxy.cfg
 
 echo "ENABLED=1" >> /etc/default/haproxy
