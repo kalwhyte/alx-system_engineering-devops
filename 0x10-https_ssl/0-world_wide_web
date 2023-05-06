@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Script that will display information about subdomains 
+# A script that will display information about subdomains 
 
 DNS_info () {
     ANSWER=$(dig $2 | grep -A1 'ANSWER SECTION:' | awk 'NR==2 {print $0}')
