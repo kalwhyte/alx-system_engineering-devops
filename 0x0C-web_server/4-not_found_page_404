@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
-# 404 Not Found Page
+# Script that installs Nginx server, redirect /redirect_me and customize 404 not found
 
-apt-get update
-apt-get install -y nginx
-
-touch /var/www/whytecode.tech/html/index.html /var/www/whytecode.tech/html/404.html
-echo "Hello World!" > /var/www/whytecode.tech/html/index.html
-echo "Ceci n'est pas une page" > /var/www/whytecode.tech/html/404.html
-
-sed -i "s|# server {|server {\n    listen		80 default_server;\n    listen		[::]:80 default_server;\n\n    root		/var/www/whytecode.tech/html;\n    index		index.html index.htm index.nginx-debian.html;\n\n    error_page 404 /404.html;\n    location = /404.html {\n        internal;\n    }\n}|" /etc/nginx/sites-available/default
-
-service nginx restart
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo ufw allow 'Nginx HTTP'
+echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/404.html
+location_block="location = /404.html {\n\t\tinternal;\n\t\troot /usr/share/nginx/html;\n\t}"
+sudo sed -i "/server {/a $location_block" /etc/nginx/sites-available/default
+sudo service nginx restart inside and outside the server.

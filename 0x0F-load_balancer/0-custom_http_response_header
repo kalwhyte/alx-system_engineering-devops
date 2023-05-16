@@ -1,29 +1,11 @@
 #!/usr/bin/env bash
-# 404 Not Found Page
+# returns a custom header on request
 
-apt-get update
-apt-get install -y nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
 
-touch /var/www/whytecode.tech/html/index.html /var/www/whytecode.tech/html/404.html
-echo "Hello World!" > /var/www/whytecode.tech/html/index.html
-echo "Ceci n'est pas une page" > /var/www/whytecode.tech/html/404.html
+sudo sed -i "6i\\\tadd_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default
+echo "Hello World!" | sudo tee /var/www/html/index.html
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
 
-printf %s "server {
-    listen 80;
-    listen [::]:80 default_server;
-    add_header X-Served-By $HOSTNAME;
-    root   /var/www/whytecode.tech/html/;
-    index  index.html index.htm;
-
-    location /redirect_me {
-        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
-    }
-
-    error_page 404 /404.html;
-    location /404 {
-        root /var/www/whytecode.tech/html/;
-        internal;
-    }
-}" > /etc/nginx/sites-available/default
-
-service nginx restart
+sudo service nginx start
